@@ -59,6 +59,7 @@ param(
     [uint64] $GroupId = 0,
     
     [Parameter(Mandatory=$false)]
+    [ValidateSet("csv", "table")]
     [string]$OutputFormat="csv",
     
     [Parameter(Mandatory=$false)]
